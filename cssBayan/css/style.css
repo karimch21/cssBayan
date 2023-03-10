@@ -1,0 +1,28 @@
+html{
+ box-sizing: border-box;
+}
+
+body, html{
+  position: relative;
+  height: 100%;
+}
+
+*{
+ box-sizing: inherit;
+ margin: 0;
+ padding: 0;
+}
+
+ul{
+ list-style: none;
+}
+
+img{
+ max-width: 100%;
+}
+
+a{
+ display: inline-block;
+ text-decoration: none;
+}
+
