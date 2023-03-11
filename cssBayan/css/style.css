@@ -1,13 +1,40 @@
 .accordion-title{
+ margin-bottom: 50px;
  text-align: center;
+ color: tomato;
 }
 
 .list__item{
- margin-bottom: 30px;
+ margin-bottom: 10px;
+ position: relative;
+ z-index: 0;
+}
+
+.list__item label{
+ display: block;
 }
 
 .list__title{
- text-align: center;
+ padding-left: 8px;
+ margin-bottom: 10px;
+ color: #fff;
+}
+
+.list__title-text{
+ position: relative;
+ z-index: 0;
+}
+
+.list__title-text::after{
+ content: "";
+ width: 100%;
+ height: 3px;
+ background-color: #fff;
+ position: absolute;
+ z-index: 0;
+ left: 0;
+ bottom: -3px;
+ transition: background-color 0.5s;
 }
 
 .list__img-box{
@@ -23,7 +50,7 @@
 .accordion-inp{
  display: none;
 }
-.list__block{
+.list__block img{
  padding: 0px 0;
  max-height: 0;
  overflow: hidden;
@@ -31,20 +58,24 @@
  margin: 0 auto;
 }
 
-.accordion-inp:checked + .list__block{
+.accordion-inp:checked + .list__block img{
  max-width: 600px;
  max-height: 100vh;
  overflow: visible;
  transition: all 0.5s;
 }
 
-
 @media (hover:hover){
- .list__item:hover .list__block{
+ .list__item:hover .list__block img{
   max-width: 600px;
   max-height: 100vh;
   overflow: visible;
   transition: all 0.5s;
  }
- 
+ .accordion:hover .list__title-text::after{
+  background-color: orange;
+ }
+ label:hover{
+  cursor: pointer;
+ }
 }
