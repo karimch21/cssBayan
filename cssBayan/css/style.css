@@ -20,3 +20,31 @@
  height: 100%;
 }
 
+.accordion-inp{
+ display: none;
+}
+.list__block{
+ padding: 0px 0;
+ max-height: 0;
+ overflow: hidden;
+ transition: all 0.5s;
+ margin: 0 auto;
+}
+
+.accordion-inp:checked + .list__block{
+ max-width: 600px;
+ max-height: 100vh;
+ overflow: visible;
+ transition: all 0.5s;
+}
+
+
+@media (hover:hover){
+ .list__item:hover .list__block{
+  max-width: 600px;
+  max-height: 100vh;
+  overflow: visible;
+  transition: all 0.5s;
+ }
+ 
+}
