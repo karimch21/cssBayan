@@ -1,0 +1,22 @@
+.accordion-title{
+ text-align: center;
+}
+
+.list__item{
+ margin-bottom: 30px;
+}
+
+.list__title{
+ text-align: center;
+}
+
+.list__img-box{
+ margin: 0 auto;
+ max-width: 540px;
+}
+
+.list__img{
+ width: 100%;
+ height: 100%;
+}
+
