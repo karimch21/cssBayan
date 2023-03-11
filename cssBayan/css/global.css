@@ -3,8 +3,11 @@ html{
 }
 
 body, html{
-  position: relative;
-  height: 100%;
+ position: relative;
+ height: 100%;
+}
+body{
+ overflow-x: hidden;
 }
 
 *{
@@ -26,3 +29,8 @@ a{
  text-decoration: none;
 }
 
+.container{
+ min-width: 320px;
+ max-width: 1380px;
+ margin: 0 auto;
+}
