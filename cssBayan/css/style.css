@@ -21,6 +21,7 @@
 .list__title {
  margin-right: 0.6em;
  color: #fff;
+ transition: color 0.5s;
 }
 
 .list__img-box {
@@ -112,6 +113,18 @@
 
  label:active .list__icon-status path {
   fill: tomato;
+ }
+
+ label:active .list__title {
+  color: tomato;
+ }
+
+ label:hover .list__icon-status path {
+  fill: rgb(160, 160, 160);
+ }
+
+ label:hover .list__title {
+  color: rgb(160, 160, 160);
  }
 
  .label:hover .list__icon-status {
