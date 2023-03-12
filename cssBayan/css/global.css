@@ -1,38 +1,41 @@
-html{
+html {
+ -webkit-box-sizing: border-box;
  box-sizing: border-box;
 }
 
-body, html{
+body, html {
  position: relative;
  height: 100%;
 }
-body{
+
+body {
  overflow-x: hidden;
  background-color: rgba(0, 0, 0, 0.89);
  font-family: 'EB Garamond', serif;
  font-size: 14px;
 }
 
-*{
+* {
+ -webkit-box-sizing: inherit;
  box-sizing: inherit;
  margin: 0;
  padding: 0;
 }
 
-ul{
+ul {
  list-style: none;
 }
 
-img{
+img {
  max-width: 100%;
 }
 
-a{
+a {
  display: inline-block;
  text-decoration: none;
 }
 
-.container{
+.container {
  padding: 0 5px;
  min-width: 320px;
  max-width: 980px;
@@ -40,16 +43,17 @@ a{
  margin: 0 auto;
 }
 
-@media (min-width: 820px){
- .container{
+@media (min-width: 820px) {
+ .container {
   padding: 0 20px;
  }
+
  body {
   font-size: 18px;
  }
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1920px) {
  body {
   font-size: 25px;
  }
