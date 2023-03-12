@@ -1,6 +1,6 @@
 .accordion-title{
  padding-top: 20px;
- margin-bottom: 50px;
+ margin-bottom: 30px;
  text-align: center;
  color: tomato;
  font-family: 'Lobster', cursive;
@@ -24,7 +24,6 @@
 
 .list__img-box{
  margin: 0 auto;
- max-width: 520px;
  font-size: 0;
 }
 
@@ -42,10 +41,10 @@
  overflow: hidden;
  transition: all 0.5s;
  margin: 0 auto;
+ object-fit: contain;
 }
 
 .accordion-inp:checked ~ .list__block img{
- max-width: 600px;
  max-height: 100vh;
  overflow: visible;
  transition: all 0.5s;
@@ -95,7 +94,6 @@
 
 @media (hover:hover){
  .list__item:hover .list__block img{
-  max-width: 600px;
   max-height: 100vh;
   overflow: visible;
   transition: all 0.5s;
@@ -122,6 +120,9 @@
 
 @media (min-width: 820px){
  .accordion-title{
+  margin-bottom: 50px;
+ }
+ .accordion-title{
   font-size: 50px;
  }
  .list__icon-status svg {
@@ -140,9 +141,3 @@
  }
 }
 
-@media (min-height: 568px){
- .accordion-inp:checked ~ .list__block img {
-  max-width: 650px;
-  min-height: 800px;
- }
-}
