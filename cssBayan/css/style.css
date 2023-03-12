@@ -1,15 +1,15 @@
 .accordion-title {
- padding-top: 20px;
- margin-bottom: 30px;
+ padding-top: 1rem;
+ margin-bottom: 1.8rem;
  text-align: center;
  color: tomato;
  font-family: 'Lobster', cursive;
- font-size: 45px;
+ font-size: 2.6em;
  font-weight: normal;
 }
 
 .list__item {
- margin-bottom: 10px;
+ margin-bottom: 0.6rem;
  position: relative;
  z-index: 0;
 }
@@ -19,6 +19,7 @@
 }
 
 .list__title {
+ margin-right: 0.6em;
  color: #fff;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .list__block img {
- padding: 0px 0;
+ padding: 0;
  max-height: 0;
  overflow: hidden;
  -webkit-transition: all 0.5s;
@@ -67,9 +68,9 @@
 }
 
 .list__info {
- margin-bottom: 10px;
- padding: 0 5px;
- padding-right: 15px;
+ margin-bottom: 0.6rem;
+ padding: 0 0.03rem;
+ padding-right: 0.9rem;
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
@@ -79,24 +80,21 @@
  -webkit-box-align: center;
  -ms-flex-align: center;
  align-items: center;
- border-bottom: 2px solid #fff;
+ border-bottom: 0.125rem solid #fff;
 }
 
 .list__icon-status {
  -webkit-transform: rotate(90deg);
  -ms-transform: rotate(90deg);
  transform: rotate(90deg);
-
  -webkit-transition: all 0.5s;
-
  -o-transition: all 0.5s;
-
  transition: all 0.5s;
 }
 
 .list__icon-status svg {
  display: inline-block;
- width: 13px;
+ width: 0.8125rem;
 }
 
 .list__icon-status path {
@@ -140,29 +138,21 @@
 
 
 @media (min-width: 820px) {
- .accordion-title {
-  margin-bottom: 50px;
- }
-
- .accordion-title {
-  font-size: 50px;
- }
-
  .list__icon-status svg {
-  width: 16px;
+  width: 1rem;
  }
 
  .list__img-box {
-  max-width: 620px;
+  max-width: 38.75rem;
  }
 }
 
 @media (min-width: 1920px) {
  .accordion-title {
-  font-size: 65px;
+  font-size: 4rem;
  }
 
  .list__icon-status svg {
-  width: 22px;
+  width: 1.375rem;
  }
 }
