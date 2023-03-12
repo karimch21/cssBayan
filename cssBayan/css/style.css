@@ -63,20 +63,7 @@
  display: flex;
  justify-content: space-between;
  align-items: center;
- position: relative;
-}
-
-.list__info::after{
- content: "";
- width: 98%;
- height: 2px;
- background-color: #fff;
- position: absolute;
- z-index: 0;
- left: 50%;
- transform: translateX(-50%);
- bottom: -3px;
- transition: background-color 0.5s;
+ border-bottom: 2px solid #fff;
 }
 
 .list__icon-status{
@@ -105,8 +92,8 @@
  .label:hover .list__icon-status{
   transform: rotate(0deg);
  }
- .accordion:hover .list__info::after{
-  background-color: orange;
+ .accordion:hover .list__info{
+  border-color: orange;
  }
  label:hover,
  .list:hover{
@@ -126,7 +113,7 @@
   font-size: 50px;
  }
  .list__icon-status svg {
-  width: 21px;
+  width: 16px;
  }
  .list__img-box {
   max-width: 620px;

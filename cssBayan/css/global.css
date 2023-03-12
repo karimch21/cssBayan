@@ -33,6 +33,7 @@ a{
 }
 
 .container{
+ padding: 0 5px;
  min-width: 320px;
  max-width: 980px;
  width: 100%;
