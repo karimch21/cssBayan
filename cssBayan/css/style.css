@@ -15,31 +15,13 @@
 }
 
 .list__title{
- padding-left: 8px;
  margin-bottom: 10px;
  color: #fff;
 }
 
-.list__title-text{
- position: relative;
- z-index: 0;
-}
-
-.list__title-text::after{
- content: "";
- width: 100%;
- height: 3px;
- background-color: #fff;
- position: absolute;
- z-index: 0;
- left: 0;
- bottom: -3px;
- transition: background-color 0.5s;
-}
-
 .list__img-box{
  margin: 0 auto;
- max-width: 540px;
+ max-width: 520px;
 }
 
 .list__img{
@@ -58,11 +40,52 @@
  margin: 0 auto;
 }
 
-.accordion-inp:checked + .list__block img{
+.accordion-inp:checked ~ .list__block img{
  max-width: 600px;
  max-height: 100vh;
  overflow: visible;
  transition: all 0.5s;
+}
+.accordion-inp:checked + .list__info .list__icon-status{
+ transform: rotate(0deg);
+}
+.accordion-inp:checked + .list__info .list__icon-status path{
+ fill: tomato;
+}
+
+.list__info{
+ margin-bottom: 10px;
+ padding: 0 5px;
+ padding-right: 15px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: relative;
+}
+
+.list__info::after{
+ content: "";
+ width: 98%;
+ height: 2px;
+ background-color: #fff;
+ position: absolute;
+ z-index: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ bottom: -1px;
+ transition: background-color 0.5s;
+}
+
+.list__icon-status{
+ transform: rotate(90deg);
+
+ transition: all 0.5s;
+}
+.list__icon-status svg{
+ width: 13px;
+}
+.list__icon-status path{
+ fill: #fff;
 }
 
 @media (hover:hover){
@@ -72,10 +95,21 @@
   overflow: visible;
   transition: all 0.5s;
  }
- .accordion:hover .list__title-text::after{
+ label:active .list__icon-status path{
+  fill: tomato;
+ }
+ 
+ .label:hover .list__icon-status{
+  transform: rotate(0deg);
+ }
+ .accordion:hover .list__info::after{
   background-color: orange;
  }
- label:hover{
+ label:hover,
+ .list:hover{
   cursor: pointer;
+ }
+ label:hover .list__icon-status{
+  transform: rotate(0);
  }
 }
