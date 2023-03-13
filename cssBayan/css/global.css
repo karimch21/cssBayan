@@ -1,0 +1,58 @@
+html {
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+body, html {
+ height: 100%;
+}
+
+body {
+ overflow-x: hidden;
+ background-color: rgba(0, 0, 0, 0.89);
+ font-family: 'EB Garamond', serif;
+ font-size: 1em;
+}
+
+* {
+ -webkit-box-sizing: inherit;
+ box-sizing: inherit;
+ margin: 0;
+ padding: 0;
+}
+
+ul {
+ list-style: none;
+}
+
+img {
+ max-width: 100%;
+}
+
+a {
+ display: inline-block;
+ text-decoration: none;
+}
+
+.container {
+ width: 98%;
+ margin: 0 auto;
+}
+
+@media (min-width: 820px) {
+ body {
+  font-size: 1.2em;
+ }
+
+ .container {
+  width: 85%;
+  max-width: 60rem;
+ }
+}
+
+
+@media (min-width: 1920px) {
+ body {
+  font-size: 1.4em;
+ }
+}
